@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- SEO -->
+    <meta name="description" content="Modern, open source, website authentication backend.">
+
+    <!-- FB -->
+    <meta property="og:site_name" content="Keratin">
+    <meta property="og:title" content="Keratin AuthN">
+    <meta property="og:description" content="Modern, open source, web app authentication.">
+    <meta property="og:image" content="https://keratin.tech/pangolin-logo-400x.png">
+    <meta property="og:image:height" content="350">
+    <meta property="og:url" content="https://keratin.tech">
+    <meta property="og:type" content="product">
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@cainlevy">
+
+    <title>Keratin AuthN</title>
+    <link rel="stylesheet" href="my.css">
+    <script src="https://use.fontawesome.com/d9efea23fe.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+  </head>
+
+  <body data-spy="scroll" data-target="#navbar" data-offset="250">
+
+    <nav class="navbar navbar-dark navbar-fixed-top bg-inverse" id="navbar">
+      <div class="container">
+        <a class="navbar-brand text-warning">
+          <img src="pangolin-logo-sm-light.gif" height="25px" />
+          <span class="font-keratin">AuthN</span>
+        </a>
+        <button class="navbar-toggler hidden-md-up float-xs-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-toggleable-sm" id="navbarResponsive" style="clear: right;">
+          <ul class="nav nav-pills navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#getting-started">Getting Started</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="https://keratin.github.io/authn-server/">Docs <span class="fa fa-arrow-circle-right"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="https://github.com/keratin"> <span class="fa fa-github"></span> Code</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="mb-3"></div>
+
+    <div class="jumbotron jumbotron-fluid bg-info pt-3 pb-0 mb-0 text-white text-xs-center">
+      <div class="container pt-3 mt-3">
+        <h1 class="font-keratin mt-3">AuthN</h1>
+      </div>
+    </div>
+
+    <!-- TLDR -->
+    <section id="authn" class="bg-info">
+      <div class="container">
+        <p class="text-xs-center mx-auto" style="max-width: 800px; font-size: 2rem;">
+          Modern, open source, web app authentication.
+        </p>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section id="intro">
+      <div class="container py-2">
+        <div id="features" class="mx-auto" style="max-width: 800px; display: flex; flex-wrap: wrap; justify-content: center;">
+          <div class="p-1" style="flex: 0 1 400px">
+
+            <h1 class="display-4 text-xs-center">Accounts</h1>
+            <p>
+              AuthN manages a database of user accounts with sign-in credentials like passwords and
+              OAuth identities.
+            </p>
+            <p>
+              Your application's frontend relies on AuthN for creating accounts, logging in,
+              forgotten passwords, and session maintenance.
+            </p>
+            <p>
+              Your application's backend relies on AuthN for account moderation actions like
+              locking, unlocking, archiving, and forcing password changes.
+            </p>
+          </div>
+
+          <div class="p-1" style="flex: 0 1 400px">
+            <h1 class="display-4 text-xs-center">Microservice</h1>
+            <p>
+              Service architecture is the safest architecture for your sensitive password data and
+              authentication logic.
+            </p>
+            <p>
+              Traditional libraries live inside your application's ever-growing security perimeter.
+              Any vulnerability you or your dependencies introduce with an unrelated change is a
+              potential vector for compromised accounts.
+            </p>
+            <p>
+              AuthN is fast, stable, and secure, no matter your platform.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="bg-faded">
+      <div class="container py-2">
+        <header class="sticky bg-faded py-1">
+          <h1 class="display-4 text-xs-center">Features</h1>
+        </header>
+        <div id="features" class="mx-auto" style="max-width: 800px; display: flex; flex-wrap: wrap; justify-content: center;">
+          <div class="p-1" style="flex: 0 1 400px">
+            <h5><span class="text-success fa fa-check-square"></span> Usernames &amp; Passwords</h5>
+            <small>Classic signup, login, and logout. Secure, hardened, and isolated.</small>
+          </div>
+          <div class="p-1" style="flex: 0 1 400px">
+            <h5><span class="text-success fa fa-check-square"></span> OAuth Logins</h5>
+            <small>Integrate with login providers such as Facebook, Google, and GitHub.</small>
+          </div>
+          <div class="p-1" style="flex: 0 1 400px">
+            <h5><span class="text-success fa fa-check-square"></span> Passwordless Logins</h5>
+            <small>Log your users in with a simple emailed link.</small>
+          </div>
+          <div class="p-1" style="flex: 0 1 400px">
+            <h5><span class="text-success fa fa-check-square"></span> Business Metrics</h5>
+            <small>Track your active accounts by day, week, and month. See your application's usage and adoption rates!</small>
+          </div>
+          <div class="p-1" style="flex: 0 1 400px">
+            <h5><span class="text-success fa fa-check-square"></span> Sessions for Apps <i>and</i> APIs</h5>
+            <small>Session tokens may be sent with cookies or headers.</small>
+          </div>
+          <div class="p-1" style="flex: 0 1 400px">
+            <h5><span class="text-success fa fa-check-square"></span> Single Sign-On</h5>
+            <small>Sessions may transfer across authorized domains.</small>
+          </div>
+          <div class="p-1" style="flex: 0 1 400px">
+            <h5><span class="text-success fa fa-check-square"></span> Password Reset Tokens</h5>
+            <small>Securely generate, validate, and expire password reset tokens.</small>
+          </div>
+          <div class="p-1" style="flex: 0 1 400px">
+            <h5><span class="text-success fa fa-check-square"></span> Forced Password Changes</h5>
+            <small>Require an account to reset their password before logging in, for any reason.</small>
+          </div>
+          <div class="p-1" style="flex: 0 1 400px">
+            <h5><span class="text-success fa fa-check-square"></span> Account Archival</h5>
+            <small>Delete personal information from archived accounts.</small>
+          </div>
+          <div class="p-1" style="flex: 0 1 400px">
+            <h5><span class="text-success fa fa-check-square"></span> Account Locking</h5>
+            <small>Prevents an account from logging in without permanently archiving it.</small>
+          </div>
+          <div class="p-1" style="flex: 0 1 400px">
+            <h5><span class="text-success fa fa-check-square"></span> Revokable Sessions</h5>
+            <small>Don't just delete session cookies, revoke them permanently.</small>
+          </div>
+          <div class="p-1" style="flex: 0 1 400px">
+            <h5><span class="text-success fa fa-check-square"></span> Session Timeouts</h5>
+            <small>Sessions may expire after inactivity.</small>
+          </div>
+          <div class="p-1" style="flex: 0 1 400px">
+            <h5><span class="text-success fa fa-check-square"></span> Expiring Sessions</h5>
+            <small>Sessions may expire after a hard cut-off.</small>
+          </div>
+          <div class="p-1" style="flex: 0 1 400px">
+            <h5><span class="text-success fa fa-check-square"></span> Password Complexity Validations</h5>
+            <small>One simple setting &mdash; 0 to 5 &mdash; controls how complex passwords must be. Based on real-world attack patterns.</small>
+          </div>
+          <div style="flex: 0 1 400px"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARE -->
+    <section id="compare">
+      <div class="container py-2">
+
+        <header class="sticky bg-default mx-auto py-1" style="max-width: 600px; margin-bottom: 3px;">
+          <h1 class="display-4 text-xs-center pb-1">Compare</h1>
+          <div class="cells">
+            <h5 class="text-xs-center px-1;" style="flex: 1 1 1px;">AuthN</h5>
+            <h5 class="text-xs-center px-1;" style="flex: 1 1 1px;">Library</h5>
+            <h5 class="text-xs-center px-1;" style="flex: 1 1 1px;">SaaS</h5>
+          </div>
+        </header>
+
+        <div class="card mx-auto pt-1" style="max-width: 600px;">
+          <div class="compare">
+            <div class="px-1">
+              <h5>Standalone Service</h5>
+              <p class="m-0">Remove complexity and responsibility from your application.</p>
+            </div>
+            <div class="cells">
+              <div class="text-xs-center p-1">
+                <span class="text-success fa fa-check"></span>
+              </div>
+              <div class="text-xs-center p-1">
+                <span class="text-danger fa fa-minus"></span>
+              </div>
+              <div class="text-xs-center p-1">
+                <span class="text-success fa fa-check"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="compare">
+            <div class="px-1">
+              <h5>Password Vault</h5>
+              <p class="m-0">Isolate sensitive data with a split database architecture.</p>
+            </div>
+            <div class="cells">
+              <div class="text-xs-center p-1">
+                <span class="text-success fa fa-check"></span>
+              </div>
+              <div class="text-xs-center p-1">
+                <span class="text-danger fa fa-minus"></span>
+              </div>
+              <div class="text-xs-center p-1">
+                <span class="text-success fa fa-check"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="compare">
+            <div class="px-1">
+              <h5>Open Source</h5>
+              <p class="m-0">Free and transparent. No security through obscurity.</p>
+            </div>
+            <div class="cells">
+              <div class="text-xs-center p-1">
+                <span class="text-success fa fa-check"></span>
+              </div>
+              <div class="text-xs-center p-1">
+                <span class="text-success fa fa-check"></span>
+              </div>
+              <div class="text-xs-center p-1">
+                <span class="text-danger fa fa-minus"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="compare">
+            <div class="px-1">
+              <h5>Independent</h5>
+              <p class="m-0">Platform agnostic with no vendor lock-in.</p>
+            </div>
+            <div class="cells">
+              <div class="text-xs-center p-1">
+                <span class="text-success fa fa-check"></span>
+              </div>
+              <div class="text-xs-center p-1">
+                <span class="text-success fa fa-check"></span>
+              </div>
+              <div class="text-xs-center p-1">
+                <span class="text-danger fa fa-minus"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="getting-started" class="bg-faded">
+      <div class="container py-2">
+        <header class="sticky bg-faded py-1">
+          <h1 class="display-4 text-xs-center">Getting Started</h1>
+        </header>
+
+        <div style="display: flex">
+          <div class="hidden-md-down" class="sticky" style="flex: 0 0 320px;">
+            <ul class="nav nav-pills nav-stacked" style="position: sticky; top: 139px;">
+              <li class="nav-item">
+                <a class="nav-link" href="#step-service">1. Run the AuthN service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#step-clients">2. Add backend &amp; frontend clients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#step-integrate">3. Integrate features</a>
+              </li>
+            </ul>
+          </div>
+          <div style="flex: 1 0 1px;">
+            <div id="step-service">
+              <h2>1. Run the AuthN service</h2>
+
+              <p>Run it locally with <a href="https://docs.docker.com/engine/installation/">Docker</a>:</p>
+
+              <div class="card bg-default p-1">
+                <pre><code class="bash">
+docker run -it --rm \
+  --publish 8080:3000 \
+  -e AUTHN_URL=localhost:8080 \
+  -e APP_DOMAINS=localhost \
+  -e DATABASE_URL=sqlite3://:memory:?mode=memory\&cache=shared \
+  -e SECRET_KEY_BASE='my-authn-test-secret' \
+  -e HTTP_AUTH_USERNAME=hello \
+  -e HTTP_AUTH_PASSWORD=world \
+  --name authn_app \
+  keratin/authn-server:latest \
+  sh -c "./authn migrate && ./authn server"
+                </code></pre>
+              </div>
+
+              <p>You can now verify it's running by opening <a href="http://localhost:8080/health">http://localhost:8080/health</a> in your browser.</p>
+            </div>
+
+            <div id="step-clients" class="my-2">
+              <h2>2. Add backend &amp; frontend clients</h2>
+
+              <p>AuthN integrates with both your backend and your frontend.</p>
+
+              <label>Backend:</label>
+              <a href="https://github.com/keratin/authn-rb" class="nav-item btn btn-secondary"><img src="ruby-logo.png" height="20" /> Ruby</a>
+              <a href="https://github.com/keratin/authn-go" class="nav-item btn btn-secondary"><img src="go-logo.png" height="20" /> Go</a>
+
+              <br/>
+
+              <label>Frontend:</label>
+              <a href="https://github.com/keratin/authn-js" class="nav-item btn btn-secondary"><img src="javascript-logo.png" height="20" /> JavaScript</a>
+            </div>
+
+            <div id="step-integrate" class="my-2">
+              <h2>3. Integrate features</h2>
+
+              <strong>Basic Features</strong>
+              <ul>
+                <li><a href="https://keratin.github.io/authn-server/#/guide-implementing_oauth">OAuth</a></li>
+                <li><a href="https://keratin.github.io/authn-server/#/guide-implementing_signup">Signup</a></li>
+                <li><a href="https://keratin.github.io/authn-server/#/guide-implementing_login">Login</a></li>
+                <li><a href="https://keratin.github.io/authn-server/#/guide-implementing_logout">Logout</a></li>
+                <li><a href="https://keratin.github.io/authn-server/#/guide-implementing_forgotten_passwords">Forgotten Passwords</a></li>
+                <li><a href="https://keratin.github.io/authn-server/#/guide-implementing_change_password">Change Password</a></li>
+                <li><a href="https://keratin.github.io/authn-server/#/guide-implementing_passwordless_logins">Passwordless Login</a></li>
+              </ul>
+
+              <strong>Other Guides</strong>
+              <ul>
+                <li><a href="https://keratin.github.io/authn-server/#/guide-synchronize_emails">Synchronize Emails</a></li>
+                <li><a href="https://keratin.github.io/authn-server/#/guide-displaying_a_password_strength_meter">Password Strength Meter</a></li>
+                <li><a href="https://keratin.github.io/authn-server/#/guide-restrict_signups_by_invitation">Invitation-Only Signups</a></li>
+                <li><a href="https://keratin.github.io/authn-server/#/guide-restrict_signups_by_domain">Single Domain Signups</a></li>
+                <li><a href="https://keratin.github.io/authn-server/#/guide-make_sessions_timeout_from_inactivity">Inactive Session Timeout</a></li>
+                <li><a href="https://keratin.github.io/authn-server/#/guide-confirm-password">Password Confirmation</a></li>
+              </ul>
+
+              <a class="nav-link" href="https://keratin.github.io/authn-server/#/README.md">
+                <strong><span class="fa fa-github"></span> All Documentation</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-inverse text-white py-1">
+      <div class="container">
+        © 2016-2017 <a href="https://cainlevy.net">Lance Ivy</a>
+        <div class="pull-right">
+          <a href="https://gitter.im/keratin/authn-server?utm_source=share-link&utm_medium=link&utm_campaign=share-link" class="text-white">Gitter Chat</a>
+          |
+          <a href="mailto:info@keratin.tech" class="text-white"><span class="fa fa-envelope"></span> Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-86480580-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
+    <!-- Syntax Highlighter -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <script src="stickyfill.min.js"></script>
+    <script src="my.js"></script>
+  </body>
+</html>
